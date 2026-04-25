@@ -1,4 +1,4 @@
-// Approve / Reject Leave
+
 void updateLeave() {
     FILE *fp = fopen("leave.txt", "r");
     FILE *temp = fopen("temp.txt", "w");
@@ -33,7 +33,7 @@ void updateLeave() {
     rename("temp.txt", "leave.txt");
 
     if (found)
-        printf("✅ Status Updated Successfully!\n");
+        printf(" Status Updated Successfully!\n");
     else
-        printf("❌ Record Not Found!\n");
+        printf(" Record Not Found!\n");
 }

@@ -8,7 +8,31 @@ struct Leave {
     char status[20];
 };
 
+// Apply Leave
+void applyLeave() {
+    FILE *fp = fopen("leave.txt", "a");
+    struct Leave l;
 
+    printf("\nEnter ID: ");
+    scanf("%d", &l.id);
+
+    printf("Enter Name: ");
+    scanf("%s", l.name);
+
+    printf("Enter number of days: ");
+    scanf("%d", &l.days);
+
+    strcpy(l.status, "Pending");
+
+    fprintf(fp, "%d %s %d %s\n", l.id, l.name, l.days, l.status);
+
+    fclose(fp);
+
+    printf("✅ Leave Applied Successfully!\n");
+}
+
+
+  //Update
 void updateLeave() {
     FILE *fp = fopen("leave.txt", "r");
     FILE *temp = fopen("temp.txt", "w");

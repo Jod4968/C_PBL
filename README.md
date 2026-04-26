@@ -1,5 +1,5 @@
 
-📌 Leave Management System (C Project)
+📌 Leave Management System (C Project)<br>
 🧾 Project Description<br>
 
 This is a simple Leave Management System developed in the C programming language.

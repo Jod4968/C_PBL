@@ -28,7 +28,7 @@ void applyLeave() {
 
     fclose(fp);
 
-    printf("✅ Leave Applied Successfully!\n");
+    printf("Leave Applied Successfully!\n");
 }
 
 
